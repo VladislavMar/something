@@ -17,7 +17,7 @@ console.log(userName);
 */
 // const - не моедт менять значение
 /*const yearOfBirth = 1990;
-*/
+ */
 // var - старый формат объявления перменной
 // не рекомендуется
 // может менять значение на протяжении работы программы
@@ -33,25 +33,27 @@ console.log(city)
 // когда явно понятно что переменная будет менять свое значение, тогда let
 
 //--------- Типы данных
-let userName = 'Vlad' // Строка (Текст), (Одно словоЮ фраза, предложение, абзац, хоть целая книга)
+
+/*let userName = 'Vlad' // Строка (Текст), (Одно словоЮ фраза, предложение, абзац, хоть целая книга)
  
 let number = 30 // Число
 
 let = isMarried = false // Логическре занчение true/false
-
+*/
 // Динамическая типизация
-let someVariable = 'Some value' // someVariable типа String
+/*let someVariable = 'Some value' // someVariable типа String
 someVariable = 50 // someVariable типа number 
 someVariable = true // someVariable становится типа BooLean
-
-// Значение null 
+*/
+// Значение null
 // "ничего" "пусто" или "значение неизвестно"
 
-let age = 32
+/*let age = 32
 age = null 
+*/
 
 // Значение undefined
-// Значение не присвоено 
+// Значение не присвоено
 /*let family
 console.log(family)
  
@@ -60,8 +62,104 @@ someName = null
 */
 
 // оператор typeof
-const someName = true
+/*const someName = true
 typeof someName 
 console.log(typeof someName)
+*/
 
-// 
+// ============Операторы сравнения и условия ===========
+/*let number = 5;
+if(number == 10){
+    console.log('fuck niggers')
+} else {
+    console.log('niggers are good') 
+}
+*/
+/*
+const time = 20;
+if (time < 12) {
+  console.log("Good morning!");
+} else if (time >= 12 && time < 18) {
+    console.log('Good afternoon!')
+} else {
+    console.log('Good evening!')
+}
+*/
+/*
+ЛОГИЧЕСКИЕ ОПЕРАТОРЫ
+&& - логическое И
+|| - лоигческое ИЛИ
+!true - логическое НЕ
+*/
+
+// --------------- Тернарный оператор ---------------
+/*
+if (10 < 12 ) {
+    console.log('Условие верно!')
+} else {
+    console.log('Условие НЕ верно!')
+} 
+*/
+// (условие) ? (условие верно) : (условие не верно);
+
+// 20 < 12 ? console.log('YES') : console.log('NO');
+// let greeting;
+// let time = 10;
+// if (time < 12) {
+//   greeting = "Good morning!";
+// } else {
+//   greeting = "Good afternoon!";
+// }
+// console.log(greeting);
+
+//================= Конкатенация строк и шаблонные строки ==============
+
+// let greeting = "Hi, Vlad!";
+// let howAreYou = " Whats up?";
+// let sayHi = greeting + howAreYou;
+// console.log(sayHi);
+
+// конкатенация 'строка' + 'строка'
+
+// const userName = "Vlad";
+// console.log("Hi, " + userName + "! Whats up?");
+
+// шаблонные строки
+//шаблонные строки и интерполяция
+// console.log(`Hi, ${userName}!  Whats up?`);
+
+// ============= Функции ===============
+// DRY - dont repeat yourself
+
+// console.log('Hello, dear user!');
+
+// function sayHi() {
+//     console.log('Hello, dear user!');
+// }
+
+// sayHi()
+
+
+// function declaration
+// function sayHi() {
+//     alert('nigger')
+// }
+
+
+//function expression 
+// const sayHi = function () {
+//     console.log('nigger')
+// }
+
+
+// ======= Параметры и аргументы для функции =========
+// const userName = 'Vlad'
+// console.log(`Hello, ${userName}! How are you?`)
+
+function sayHi(name) {
+    console.log(`Hello, ${name}! How are you?`)
+}
+
+sayHi('Bob')
+sayHi('Negr')
+sayHi('Daun')
