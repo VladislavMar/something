@@ -139,23 +139,21 @@ if (10 < 12 ) {
 
 // sayHi()
 
-
 // function declaration
 // function sayHi() {
 //     alert('nigger')
 // }
 
-
-//function expression 
+//function expression
 // const sayHi = function () {
 //     console.log('nigger')
 // }
-
 
 // ======= Параметры и аргументы для функции =========
 // const userName = 'Vlad'
 // console.log(`Hello, ${userName}! How are you?`)
 
+/*
 function sayHi(name) {
     console.log(`Hello, ${name}! How are you?`)
 }
@@ -163,3 +161,35 @@ function sayHi(name) {
 sayHi('Bob')
 sayHi('Negr')
 sayHi('Daun')
+*/
+
+// ========= return ========
+
+// function summ (a, b) {
+//     const result = a + b
+//     return result
+// }
+
+// let res = summ (10, 15)
+// console.log(res)
+
+//============= Функция как аргумент ===============
+
+function summ(a, b) {
+  return a + b;
+}
+
+// const result = summ(summ(15, 15), summ(20, 20));
+// console.log(result);
+
+function diff(a, b) {
+  return a - b;
+}
+function doSomething(func) {
+  let x = 228;
+  let y = 1488;
+  let result = func(x, y);
+  console.log(result);
+}
+
+doSomething(diff);
