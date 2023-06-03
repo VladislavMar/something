@@ -175,6 +175,7 @@ sayHi('Daun')
 
 //============= Функция как аргумент ===============
 
+/*
 function summ(a, b) {
   return a + b;
 }
@@ -193,3 +194,48 @@ function doSomething(func) {
 }
 
 doSomething(diff);
+*/
+
+//===========Самовызывающаяся функция (IIFE)=====================
+/*
+(function () {
+  console.log('Здарова!')
+})();
+
+
+let res = (function (a, b) {
+  return a + b;
+})(10, 15);
+console.log(res);
+*/
+
+//==========Стрелочные функции=========
+
+// function sayHi(name) {
+//   console.log(`Hello ${name}! How are you doing today?`);
+// }
+// sayHi("Vlad");
+
+// const arrSayHi = (name) => {
+//   console.log(`Hello ${name}! How are you doing today?`);
+// };
+// arrSayHi("Vlad");
+
+// const arrSayHi = (name) => console.log(`Hello ${name}! How are you doing today?`);
+// arrSayHi("Vlad");
+
+// function summ(a, b) {
+//   const result = a + b;
+// }
+
+
+
+// const summ = (a, b) => {
+//   return a + b;
+// };
+
+
+
+const summ = (a, b) => a + b;
+const res = summ (228, 1488)
+console.log(res)
