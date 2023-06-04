@@ -236,6 +236,40 @@ console.log(res);
 
 
 
-const summ = (a, b) => a + b;
-const res = summ (228, 1488)
-console.log(res)
+// const summ = (a, b) => a + b;
+// const res = summ (228, 1488)
+// console.log(res)
+
+
+//===========Массивы=============
+
+/*
+const autoBrand1 = 'Audi';
+const autoBrand2 = 'BMW';
+const autoBrand3 = 'Mazda';
+const autoBrand4 = 'Toyota';
+
+const autoBrands = ['Audi', 5, 'BMW', true, ['Mazda', 'Toyota'], 70];  
+console.log(autoBrands);
+console.log(autoBrands[0]);
+console.log(autoBrands[2]);
+autoBrands.length;
+console.log(autoBrands.length); //длинна массива, кол-во элементов
+*/
+
+//=============Методы массивов==============
+
+/*
+push(items) - Добавить элемент в конец массива
+arr.pop() - Удалить элемент из конца массива
+arr.shift() - Удалить элемент из нчала массива
+arr.unshift(...intems) - Добавить элемент в начало массива 
+arr.splice([start]], [deleteCount, [newElements])
+*/
+
+const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+console.log(autoBrands);
+autoBrands.push('Nissan');
+console.log(autoBrands);
+autoBrands.splice(2, 1);
+console.log(autoBrands);
