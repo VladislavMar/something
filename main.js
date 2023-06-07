@@ -267,9 +267,55 @@ arr.unshift(...intems) - Добавить элемент в начало мас�
 arr.splice([start]], [deleteCount, [newElements])
 */
 
+/*
 const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
 console.log(autoBrands);
 autoBrands.push('Nissan');
 console.log(autoBrands);
 autoBrands.splice(2, 1);
 console.log(autoBrands);
+*/
+//============Циклы============
+/*
+console.log('Start');
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}  
+console.log('Finish');
+*/
+//===============Обход массива циклом for=============
+
+// const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+// console.log(autoBrands[0]);
+// console.log(autoBrands[1]);
+// console.log(autoBrands[2]);
+// console.log(autoBrands[3]);
+// console.log(autoBrands[4]);
+
+// for (i = 0; i < autoBrands.length; i++) {
+//   console.log(autoBrands[i]);
+// }
+
+//===============Обход массива циклом for (of)===============
+/*
+const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+
+for(let brand of autoBrands) {
+  console.log(brand)
+}
+*/
+//============= Обход массива методом forEach() =======================
+const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+
+// autoBrands.forEach(function (brand, i) {
+//   console.log(`${brand} => ${i}`);
+// })
+
+autoBrands.forEach(printBrand)
+
+function printBrand (brand, i) {
+  console.log(`${brand} => ${i}`);
+}
+
+
+autoBrands.forEach((brand, i) => console.log(`${brand} => ${i}`));
