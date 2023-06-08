@@ -305,17 +305,46 @@ for(let brand of autoBrands) {
 }
 */
 //============= Обход массива методом forEach() =======================
-const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+
+// const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
 
 // autoBrands.forEach(function (brand, i) {
 //   console.log(`${brand} => ${i}`);
 // })
-
+/*
 autoBrands.forEach(printBrand)
 
 function printBrand (brand, i) {
   console.log(`${brand} => ${i}`);
 }
+*/
 
+// autoBrands.forEach((brand, i) => console.log(`${brand} => ${i}`));
 
-autoBrands.forEach((brand, i) => console.log(`${brand} => ${i}`));
+ 
+//============ Объекты ================
+// Свойства объектов
+
+let userName = 'Vlad';
+let age = 30;
+let isMarried = false;
+
+const person = {
+  userName: 'Vlad',
+  age: 30,
+  isMarried: false,
+  // profession: 'Web Developer'
+}
+
+console.log(person);
+console.log(person.userName);
+console.log(person['age']);
+
+// let propertyName = 'profession';
+// console.log(person[propertyName])
+
+person.profession = 'JS developer'
+console.log(person);
+
+delete person.age;
+console.log(person);
